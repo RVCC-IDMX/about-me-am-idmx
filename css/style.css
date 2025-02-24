@@ -1,3 +1,32 @@
 body {
-    background-color:#8FA5EB;
+    font-family:"IBM Plex Mono";
+    /*font-weight: 600;*/
+    background-color:#BAC7E6;
+    color: #2D3F66;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Prociono";
+    font-size: 30pt;
+}
+
+header {
+    text-align:center;
+}
+
+#hero, footer {
+    color: #151E30;
+    background-color: #7B88A6;
+    text-align:center;
+    padding:10px;
+    border: 2px solid #2D3F66;
+}
+
+#hero img {
+    width: 150px;
+}
+
+#bio {
+    text-align:center;
+}
+
