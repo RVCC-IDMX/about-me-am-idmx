@@ -55,3 +55,9 @@ header {
 #gallery figure {
     text-align:center;
 }
+
+/*Article*/
+
+#lipsum p {
+    max-width:75%;
+}
