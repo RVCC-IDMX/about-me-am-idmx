@@ -34,3 +34,13 @@ header {
     font-style:italic;
 }
 
+/*Hobbies list*/
+
+#hobbies ul li:nth-child(3n-1) {
+    font-weight:bold;
+
+}
+#hobbies ul li:nth-child(3n) {
+    font-style:oblique;
+
+}
