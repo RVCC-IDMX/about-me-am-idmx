@@ -28,7 +28,13 @@ header {
 }
 
 #bio {
-    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bio h2 {
+    margin:.5ex;
 }
 
 #bio1::first-line {
@@ -37,6 +43,13 @@ header {
 
 /*Hobbies list*/
 
+
+#hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #hobbies ul li:nth-child(3n-1) {
     font-weight:bold;
 
@@ -44,6 +57,10 @@ header {
 #hobbies ul li:nth-child(3n) {
     font-style:oblique;
 
+}
+
+#hobbies h2 {
+    margin:.5ex;
 }
 
 /*Gallery*/
@@ -60,4 +77,17 @@ header {
 
 #lipsum p {
     max-width:75%;
+}
+
+@media screen and (min-width: 60em) {
+    figure {
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    figcaption {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+    }
 }
