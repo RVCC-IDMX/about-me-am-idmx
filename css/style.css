@@ -81,7 +81,7 @@ header {
     columns: 40rem;
 }
 
-#lipsum p::first-letter {
+#firstp::first-letter {
     color:#7B88A6;
     background-color:#151E30;
     float:left;
