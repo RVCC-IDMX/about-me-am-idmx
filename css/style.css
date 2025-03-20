@@ -73,11 +73,26 @@ header {
     text-align:center;
 }
 
+
 /*Article*/
 
 #lipsum p {
-    max-width:75%;
+    max-width:100%;
+    columns: 40rem;
 }
+
+#lipsum p::first-letter {
+    color:#7B88A6;
+    background-color:#151E30;
+    float:left;
+    border:10px double #2D3F66;
+    border-radius:10px;
+    padding:0.2ex;
+    font-size:500%;
+    margin-right:.5ex;
+    text-shadow:4px 4px #2D3F66;
+}
+
 
 @media screen and (min-width: 60em) {
     figure {
@@ -90,4 +105,29 @@ header {
         align-items: center;
         font-size: 1.5em;
     }
+}
+
+/* large screen size */
+
+@media screen and (min-width: 100em) {
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+     }
+
+     hr {
+        display: none;
+     }
+
+     #gallery h2 {
+        grid-column: 1/-1;
+
+     }
+     figure {
+        display: block;
+     }
+
+     figure img {
+        max-height:70%;
+     }
 }
