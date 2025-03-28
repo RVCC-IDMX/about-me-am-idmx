@@ -93,13 +93,16 @@ header {
     text-shadow:4px 4px #2D3F66;
 }
 
+iframe {
+    border: 2px solid #151E30;
+ }
 
 @media screen and (min-width: 60em) {
     figure {
         display:grid;
         grid-template-columns: 2fr 1fr;
     }
-    figcaption {
+    #fc {
         display:flex;
         justify-content: center;
         align-items: center;
@@ -130,4 +133,8 @@ header {
      figure img {
         max-height:70%;
      }
+     #vid figcaption {
+        justify-content: left;
+     }
+     
 }
