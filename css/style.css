@@ -97,6 +97,16 @@ iframe {
     border: 2px solid #151E30;
  }
 
+
+
+/*Contact Form*/
+
+#formElements {
+    display:grid;
+    max-width:50%;
+}
+
+
 @media screen and (min-width: 60em) {
     figure {
         display:grid;
