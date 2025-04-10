@@ -10,9 +10,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 30pt;
 }
 
-header {
+/*header {
     text-align:center;
-}
+}*/
 
 #hero, footer {
     color: #151E30;
