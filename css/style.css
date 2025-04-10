@@ -95,6 +95,7 @@ header {
 
 iframe {
     border: 2px solid #151E30;
+    max-width:98%;
  }
 
 
@@ -103,9 +104,56 @@ iframe {
 
 #formElements {
     display:grid;
-    max-width:50%;
+    row-gap:.5em;
 }
 
+#contact {
+    padding: 1rem;
+    max-width:600px;
+    margin: 2rem auto;
+}
+
+fieldset {
+    border: 2px solid #2D3F66;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+
+#formouter {
+    border: 2px solid #2D3F66;
+    margin-top:1em;
+    margin-bottom:1em;
+    box-shadow:10px 10px #2D3F66;
+}
+
+legend {
+    background-color:#2D3F66;
+    color:#BAC7E6;
+    padding:0.5rem;
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding:.5em;
+    font-size:1rem;
+}
+
+#contact ul {
+    list-style:none;
+    padding:0px;
+}
+
+#contact li {
+    margin:1rem;
+}
+
+#contact button {
+    background-color:#2D3F66;
+    color:#BAC7E6;
+    border:2px solid #151E30;
+    max-width:400px;
+    width:50%;
+    justify-self: center;
+}
 
 @media screen and (min-width: 60em) {
     figure {
