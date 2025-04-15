@@ -6,11 +6,15 @@
 ## Project Description
 The purpose of the "About Me" Project was to be introduced to various web development, HTML and CSS (Hypertext Markup Language, Cascading Style Sheets respectively) concepts and to gain experience employing them in the creation of a page about myself.
 
+#### Things learned along the way...
 During this project, some of the things (truncated) I learned were:
 * Styling of HTML pages using CSS rather than outdated style tags.
 * Correct usage of Flexbox for page layout design.
 * Creation and styling of forms, navigation aids and hover states.
 * Consideration of accessibility and perception difficulties in page design, notation and styling.
+
+#### Final touches...
+During this final stage of development, I intend to replace placeholder elements, add minor style differentiations for mobile and desktop experiences, some hover states and potentially an animated element.
 
 
 ## Color Scheme
@@ -33,5 +37,8 @@ The **_RGB_ codes** as well as my given name for each color are as follows:
 * Rich blue: `rgb(45, 63, 102)`
 * Night blue: `rgb(21, 30, 48)`
 * Gray: `rgb(123, 136, 166)`
+
+## Citations
+(Work in Progress) ...
 
 **(c) 2025 Alexander Makuch, All rights reserved.**
