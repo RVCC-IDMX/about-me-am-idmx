@@ -39,6 +39,9 @@ The **_RGB_ codes** as well as my given name for each color are as follows:
 * Gray: `rgb(123, 136, 166)`
 
 ## Citations
-(Work in Progress) ...
+*Work
+*in
+*progress
+*...
 
 **(c) 2025 Alexander Makuch, All rights reserved.**
