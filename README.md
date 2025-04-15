@@ -3,8 +3,6 @@
 ##### by Alexander Makuch
 [![Netlify Status](https://api.netlify.com/api/v1/badges/88f53dec-d881-4698-acd6-a38732026099/deploy-status)](https://app.netlify.com/sites/about-me-am-idmx/deploys)
 
-... (Work in Progress) ...
-
 ## Project Description
 The purpose of the "About Me" Project was to be introduced to various web development, HTML and CSS (Hypertext Markup Language, Cascading Style Sheets respectively) concepts and to gain experience employing them in the creation of a page about myself.
 
