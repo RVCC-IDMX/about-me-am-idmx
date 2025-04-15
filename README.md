@@ -14,7 +14,7 @@ During this project, some of the things I learned were:
 
 
 ## Color Scheme
-For the page color scheme, I selected shades of blue which would be inviting and relaxing to guests as well as provide appropriate contrast for those with color perception difficulties.  Two tan tones were also prepared with appropriate consideration for contrast for future use.  Below is a graphical chart showing the color palette.
+For the page color scheme, I selected shades of blue which would be inviting and relaxing to guests as well as provide appropriate contrast for those with color perception difficulties.  Two tan tones were also prepared with appropriate consideration for contrast for potential alternative or future use.  Below is a graphical chart showing the prepared color palette and further down are the code values for each color.
 
 ![Graphical representation of color scheme selection with HEX values.](/img/color-swatches.png)
 
