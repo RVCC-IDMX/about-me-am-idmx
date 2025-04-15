@@ -5,7 +5,7 @@
 
 ... (Work in Progress) ...
 
-### Project Description
+## Project Description
 The purpose of the "About Me" Project was to be introduced to various web development, HTML and CSS (Hypertext Markup Language, Cascading Style Sheets respectively) concepts and to gain experience employing them in the creation of a page about myself.
 
 During this project, some of the things I learned were:
@@ -15,7 +15,7 @@ During this project, some of the things I learned were:
 * Consideration of accessibility and perception difficulties in page design, notation and styling.
 
 
-### Color Scheme
+## Color Scheme
 For the page color scheme, I selected shades of blue which would be inviting and relaxing to guests as well as provide appropriate contrast for those with color perception difficulties.  Two tan tones were also prepared with appropriate consideration for contrast for future use.  Below is a graphical chart showing the color palette.
 
 ![Graphical representation of color scheme selection with HEX values.](/img/color-swatches.png)
