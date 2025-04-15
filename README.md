@@ -10,12 +10,20 @@ For the page color scheme, I selected shades of blue which would be inviting and
 
 ![Graphical representation of color scheme selection with HEX values.](/img/color-swatches.png)
 
-The **HEX codes** as well as my given name for each color are as follows:
+The **_HEX_ codes** as well as my given name for each color are as follows:
 * Light tan: `#E6D8BA`
 * Dark tan: `#8F8878`
 * Pale blue: `#BAC7E6`
 * Rich blue: `#2D3F66`
 * Night blue: `#151E30`
 * Gray: `#7B88A6`
+
+The **_RGB_ codes** as well as my given name for each color are as follows:
+* Light tan: `rgb(230, 216, 186)`
+* Dark tan: `rgb(143, 136, 120)`
+* Pale blue: `rgb(186, 199, 230)`
+* Rich blue:`rgb(45, 63, 102)`
+* Night blue:`rgb(21, 30, 48)`
+* Gray:`rgb(123, 136, 166)`
 
 **(c) 2025 Alexander Makuch, All rights reserved.**
