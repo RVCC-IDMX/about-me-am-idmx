@@ -6,7 +6,7 @@
 ## Project Description
 The purpose of the "About Me" Project was to be introduced to various web development, HTML and CSS (Hypertext Markup Language, Cascading Style Sheets respectively) concepts and to gain experience employing them in the creation of a page about myself.
 
-During this project, some of the things I learned were:
+During this project, some of the things (truncated) I learned were:
 * Styling of HTML pages using CSS rather than outdated style tags.
 * Correct usage of Flexbox for page layout design.
 * Creation and styling of forms, navigation aids and hover states.
