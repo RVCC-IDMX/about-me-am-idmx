@@ -5,6 +5,16 @@
 
 ...
 
+### Project Description
+The purpose of the "About Me" Project was to be introduced to various web development, HTML and CSS (Hypertext Markup Language, Cascading Style Sheets respectively) concepts and to gain experience employing them in the creation of a page about myself.
+
+During this project, some of the things I learned were:
+* Styling of HTML pages using CSS rather than outdated style tags.
+* Correct usage of Flexbox for page layout design.
+* Creation and styling of forms, navigation aids and hover states.
+* Consideration of accessibility and perception difficulties in page design, notation and styling.
+
+
 ### Color Scheme
 For the page color scheme, I selected shades of blue which would be inviting and relaxing to guests as well as provide appropriate contrast for those with color perception difficulties.  Two tan tones were also prepared with appropriate consideration for contrast for future use.  Below is a graphical chart showing the color palette.
 
@@ -22,8 +32,8 @@ The **_RGB_ codes** as well as my given name for each color are as follows:
 * Light tan: `rgb(230, 216, 186)`
 * Dark tan: `rgb(143, 136, 120)`
 * Pale blue: `rgb(186, 199, 230)`
-* Rich blue:`rgb(45, 63, 102)`
-* Night blue:`rgb(21, 30, 48)`
-* Gray:`rgb(123, 136, 166)`
+* Rich blue: `rgb(45, 63, 102)`
+* Night blue: `rgb(21, 30, 48)`
+* Gray: `rgb(123, 136, 166)`
 
 **(c) 2025 Alexander Makuch, All rights reserved.**
