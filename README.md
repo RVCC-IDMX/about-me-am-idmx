@@ -42,6 +42,6 @@ The **_RGB_ codes** as well as my given name for each color are as follows:
 * Work
 * in
 * progress
-* ...
+* Github logo in Footer from https://github.com/.
 
 **(c) 2025 Alexander Makuch, All rights reserved.**
