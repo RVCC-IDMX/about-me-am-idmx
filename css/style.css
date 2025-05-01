@@ -121,14 +121,19 @@ footer a {
     max-width: 100%;
 }
 
-.galtitle {
+#galhead {
     text-align:center;
+}
+
+#galhead p {
+    margin-top:-2%;
+    margin-bottom:3%;
 }
 
 #gallery img {
     transition-duration:1s;
-    max-width:90%;
-    max-height:90%;
+    width:60%;
+    height:60%;
     /*max-width:100%;*/
     border: 2px solid #7B88A6;
     box-shadow: 10px 10px #7B88A6;
@@ -137,10 +142,10 @@ footer a {
 
 #gallery img:hover {
     transition-duration:1s;
-    transition-delay:1s;
-    transition-timing-function:ease-in-out;
-    width:100%;
-    height:100%;
+    transition-delay:0s;
+    transition-timing-function:linear;
+    width:90%;
+    height:90%;
 }
 
 #gallery figure {
@@ -151,12 +156,38 @@ footer a {
 
 /*Article*/
 
+#blogh {
+    color:#BAC7E6;
+    background-color:#2D3F66;
+    padding-left:2%;
+}
+
+#blogh h5 {
+    margin-bottom:3.5%;
+}
+
+#blogh p {
+    margin-top:-4%;
+    margin-bottom:3%;
+}
+
 #code {
     margin:2%;
     padding:2%;
+    max-width:50%;
     color:#BAC7E6;
     background-color:#151E30;
     border: 2px solid #2D3F66;
+}
+
+#code h6 {
+    margin-top:-1%;
+    margin-bottom:1%;
+    font-family:monospace;
+    font-size:12pt;
+    text-align:center;
+    background-color:#2D3F66;
+    background-size:auto;
 }
 
 #code span {
@@ -203,6 +234,10 @@ footer a {
 
 /*Video*/
 
+#vid {
+    border: 2px solid #2D3F66;
+    box-shadow:10px 10px #2D3F66;
+}
 
 #vid h2 {
     text-align:center;
@@ -218,6 +253,8 @@ iframe {
 
 .vidcap {
     text-align:center;
+    margin-top:1%;
+    margin-bottom:3%;
 }
 
 /*Contact Form*/
@@ -288,15 +325,27 @@ legend {
         flex-direction:column;
     }
 
+    #gallery h2:before {
+        display:none;
+        /* Hides horizontal line element for mobile users */
+    }
+
+    #galhead p {
+        display:none;
+        /* Hides instruction to hover over gallery images for mobile users */
+    }
+
     #gallery img {
         box-shadow:none;
-        margin-bottom: none;
+        margin-bottom:none;
+        width:100%;
+        height:100%;
     }
 
     #fc {
         display:flex;
-        justify-content: center;
-        align-items: center;
+        justify-content:center;
+        align-items:center;
         font-size: 1.5em;
     }
 
@@ -335,6 +384,20 @@ legend {
         columns: 40rem;
     }
 
+    #code {
+        max-width:none;
+    }
+
+    #blogh p {
+        margin-top:-4%;
+        margin-bottom:3%;
+    }
+
+    #blogh h5 {
+        margin-bottom:2%;
+        padding-left:1%;
+    }
+
     #firstp::first-letter {
         color:#7B88A6;
         background-color:#151E30;
@@ -345,6 +408,11 @@ legend {
         font-size:500%;
         margin-right:1vw;
         text-shadow:4px 4px #2D3F66;
+    }
+
+    #vid {
+        border: 2px solid #2D3F66;
+        box-shadow:none;
     }
 
     /*Contact form styling adjustment*/

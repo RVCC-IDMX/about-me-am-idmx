@@ -13,7 +13,6 @@
     <!--Styling files-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/ani.css">
 
     <!--Favicon-->
     <link rel="icon" type="image/png" sizes="96x96" href="img/fav96x96.png">
@@ -93,7 +92,11 @@
         </section>
 
         <section id="gallery">
-            <h2 class="galtitle">Photo Gallery</h2>
+
+            <div id="galhead">
+                <h2>Photo Gallery</h2>
+                <p>Hover over to enlarge!</p>
+            </div>
             
             <figure>
                 <img src="./img/code640w.jpg" alt="An image of some of my HTML.">
@@ -117,12 +120,15 @@
             <h2>Blog</h2>
 
             <div>
-
-                <h5>About Background Image Properties</h5> <h6>5/1/25</h6>
+                <div id="blogh">
+                    <h5>"About Background Image Properties"</h5>
+                    <p>5/1/25</p>
+                </div>
 
                 <p id="firstp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales velit vitae dolor aliquet hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut egestas vehicula scelerisque.</p>
 
                 <div id="code">
+                    <h6>Property: Background-clip (example)</h6>
                     <code>
                         <span>div {</span> 
                         <span>
@@ -149,7 +155,7 @@
 
             <div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/_V22lUsHbtE?si=bfBcHfpMlXI6GzC-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <figcaption class="vidcap">Embedded video (blank) demonstrating iframe functionality.</figcaption>
+                <figcaption class="vidcap">A simple embedded video demonstrating "iframe" functionality.</figcaption>
             </div>
 
         </section>
