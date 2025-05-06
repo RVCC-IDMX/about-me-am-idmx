@@ -22,7 +22,6 @@ A blog post about the subject of z-index stacking has been added with a descript
 ### The Nav Bar
 A navigation bar with different media states for desktop and mobile users is located at the top of the page.  For mobile users, a compact and animated (during toggling open and closed) hamburger menu is used for navigation.  For desktop users, the Nav Bar buttons are made visible and statically accessible across the top of the page.  
 
-
 ## Color Scheme
 For the page color scheme, I selected shades of blue which would be inviting and relaxing to guests as well as provide appropriate contrast for those with color perception difficulties.  Two tan tones were also prepared with appropriate consideration for contrast for potential alternative or future use.  Below is a graphical chart showing the prepared color palette and further down are the code values for each color.
 
