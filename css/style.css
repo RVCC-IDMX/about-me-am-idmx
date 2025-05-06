@@ -62,20 +62,24 @@ footer a {
 /*Bio+Hobbies Block*/
 
 #data {
-    display:flex;
-    align-items:flex-start;
-    justify-content:space-evenly;
+    /*display:flex;
+    align-items:flex-start;*/
+    display: grid;
+    grid-template-areas: "a a";
+    gap: 3vw;
+    grid-auto-columns: auto;
     border: 2px solid #2D3F66;
     box-shadow:10px 10px #2D3F66;
     margin-top:2vw;
+    padding:2vw;
 }
 
 /*Bio*/
 
 #bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 #bio h2 {
@@ -84,11 +88,52 @@ footer a {
 
 #bio1 #firstline {
     font-style:italic;
+    font-weight:bold;
 }
+
+#bio1 #secline {
+    text-align:right;
+    font-weight:bold;
+}
+
 
 #bio1 span {
     display:block;
 }
+
+.biosec {
+    text-align:center;
+}
+
+.biobutton {
+    display:none;
+}
+
+.biobuttonlabel {
+    border:2px solid #2D3F66;
+    background-color:#7B88A6;
+    color:#BAC7E6;
+    border-radius:5px;
+    padding:1ex;
+
+}
+
+.extrabio {
+    opacity:0;
+    display:none;
+    transition: all 500ms linear;
+}
+
+.extrabio p {
+    color:#2D3F66;
+}
+
+.biobutton:checked ~ .extrabio {
+    opacity: 1;
+    display: contents;
+    
+}
+
 
 /*Hobbies list*/
 
@@ -96,6 +141,10 @@ footer a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.biosec2 {
+    text-align:left;
 }
 
 #hobbies ul li:nth-child(3n-1) {
@@ -174,19 +223,20 @@ footer a {
 }
 
 #code {
-    margin:2%;
     padding:2%;
-    max-width:50%;
     color:#BAC7E6;
-    background-color:#151E30;
+    background-color:#000;
     border: 2px solid #2D3F66;
+    max-width:50%;
+    font-size:12pt;
+    text-align:left;
 }
 
 #code h6 {
     margin-top:-1%;
     margin-bottom:1%;
     font-family:monospace;
-    font-size:12pt;
+    font-size:13pt;
     text-align:center;
     background-color:#2D3F66;
     background-size:auto;
@@ -218,6 +268,7 @@ footer a {
 }
 
 #lipsum p {
+    max-width:75%;
     columns: 70rem;
     justify-content:space-evenly;
 }

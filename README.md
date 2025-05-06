@@ -14,7 +14,7 @@ During this project, some of the things (truncated) I learned were:
 * Consideration of accessibility and perception difficulties in page design, notation and styling.
 
 ### Final touches...
-During this final stage of development, I intend to replace placeholder elements, add minor style differentiations for mobile and desktop experiences, some hover states and potentially an animated element.
+During this final stage of development, I replaced elements which were originally occupied by placeholders, added distinct style differentiations for mobile and desktop experiences, some hover states and animated elements.
 
 
 ## Color Scheme
@@ -39,9 +39,15 @@ The **_RGB_ codes** as well as my given name for each color are as follows:
 * Gray: `rgb(123, 136, 166)`
 
 ## Citations
-* Work
-* in
-* progress
+* "am" logo (monogram) design (c) 2025 Alexander Makuch.
+
+Information sources for "Stacking with z-index" blog:
+* General information about z-index: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Stacking_context
+
+* General information about z-index and example code (then reworked): https://www.w3schools.com/cssref/pr_pos_z-index.php
+
+* General information about z-index: https://web.dev/learn/css/z-index/
+
 * Github logo in Footer from https://github.com/.
 
 **(c) 2025 Alexander Makuch, All rights reserved.**

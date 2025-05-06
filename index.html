@@ -80,26 +80,53 @@
                 <h2>Biography</h2>
                 <div>
                     
-                    <p id="bio1"><span id="firstline">I want to be... </span><span>skilled in HTML and CSS!</span></p>
+                    <p id="bio1"><span id="firstline">I want to be... </span><span id="secline">skilled in HTML and CSS!</span></p>
 
                     <p id="bio1">
-                        <span>As of time of writing, I am a college</span>
-                        <span>student engaged in studies of comput-</span>
-                        <span>er science.  </span>
+                        <span>As of the time of writing this page, I am currently a college student engaged in the exciting studies of computer science-related subjects.</span>
                     </p>
+
+                    <div class="biosec">
+                        <label for="biobutton" class="biobuttonlabel">Show/Hide</label>
+                    </div>
+
+                    <input type="checkbox" id="biobutton" class="biobutton">
+
+                    <div class="extrabio">
+
+                        <p id="bio1">
+                            <span>As you might be able to guess from the header of my page, I have been exploring an interest in Hypertext Markup Language (HTML), Cascading Style Sheets (CSS) and related concepts.  As I’ve only just begun my exploration of these web languages and how they are to be properly employed in constructing web pages, I don’t yet have any suitable examples of my work to show here apart from this page itself.</span>
+                        </p>
+
+                        <p id="bio1">
+                            <span>This “About Me Project” page was created to demonstrate the knowledge and skills which I acquired through taking a web development course at RVCC.  I strive to create web pages which are visually pleasing, designed with sections that are clearly and readily identifiable and rendered in relaxing yet lively color schemes.  I believe that web pages should be maximally inviting and accessible to as many people as possible.  In today’s interconnected world, we have the opportunity to be kind to millions of people every day.</span>
+                        </p>
+
+                        <p id="bio1">
+                            <span>Later in the future, I would like to study other computer programming languages and increase my newly-acquired capabilities in web development activities.  Java, JavaScript, Python and C are among those I would like to explore.</span>
+                        </p>
+
+                    </div>
 
                 </div>
                 <!--bio section ends here-->
             </div>
 
-            <div id="hobbies">
+            <div id="hobbies" class="biosec2">
                 <h2>My Hobbies</h2>
 
                     <ul>
-                        <li>CSS/HTML</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                        <li>Gaming</li>
                     </ul>
+                <p id="bio1">
+                    <span>In my free time, I enjoy playing multiplayer video games online to connect with people and unwind.</span>
+                </p>
+
+                <p id="bio1">
+                    <span>Additionally, I further explore HTML and CSS from time to time as a developing interest.</span>
+                </p>
             </div>
 
         </section>
@@ -121,10 +148,10 @@
                 <figcaption id="fc">My site avatar being produced.</figcaption>
             </figure>
 
-            <figure>
+            <!--<figure>
                 <img src="./img/liz3-640w.jpg" alt="A lizard sitting on a tree branch.">
                 <figcaption id="fc">A lizard chillin'.</figcaption>
-            </figure>
+            </figure>-->
 
         </section>
 
@@ -134,30 +161,169 @@
 
             <div>
                 <div id="blogh">
-                    <h5>"About Background Image Properties"</h5>
-                    <p>5/1/25</p>
+                    <h5>"Stacking with z-index"</h5>
+                    <p>5/6/25</p>
                 </div>
 
-                <p id="firstp">This blog post is currently in the draft stage.  Check back later for the finished edition!</p>
+                <p id="firstp">
+                    In this short blog post, we will be briefly examining the concept of the z-index property in HTML and a simple example of it’s function in application.  This post is by no means comprehensive and is intended only as a general guide.  Additional research is strongly encouraged.
+                </p>
+
+                <p>
+                    On your computer screen, objects are shown horizontally along the X axis, vertically along the Y axis and “three-dimensionally” along the Z axis.  Also known as “Stacking Context,” the z-index property is a three-dimensional design tool for HTML which permits page elements to be stacked one atop another along the web browser’s Z axis.  This allows for elements to be “closer” or “further” from the user, above or under other elements, just as if they were sheets of paper laid over each other on a surface.  
+                </p>
+
+                <p>
+                    The z-index property can be set using a numerical value, either positive or negative.  Elements set with a higher value (or greater “stack order”) will be displayed above those with lower values (or lower “stack order”).  However, if there is a case of overlapping elements where no z-index value is given, then the elements will be rendered automatically in an order determined by the position of each element in the markup document.  The element in the lowest part of the document would in this case be displayed on top, being the most recent, above any elements preceding it in the code.
+                </p>
+
+                <p>
+                    The z-index property will only work on positioned elements, such as when the CSS position property is set to “absolute,” “relative,” “fixed,” or “sticky” and elements which are the direct children of elements having their display property set to “flex.”  Leaving out other properties for sake of demonstration, examples of positioned elements in CSS would be:
+                </p>
 
                 <div id="code">
-                    <h6>Property: Background-clip (example)</h6>
-                    <code>
-                        <span>div {</span> 
-                        <span>
-                            border: 10px dotted black;</span>
-                            <span>padding: 15px;</span>
-                            <span>background: lightblue;</span>
-                            <span>background-clip: padding-box;</span>
-                            <span>}</span>
-                    </code>
+                    <pre>
+                        <code>
+.item1 {
+    position: absolute;
+    z-index: 1;
+}
+
+.item2 {
+    position: relative;
+    z-index: 2;
+}
+
+.item3 {
+    position: fixed;
+    z-index: 3;
+}
+
+.item4 {
+    position: sticky;
+    z-index: 4;
+}
+
+.item5 {
+    display:flex;
+    z-index: 5;
+}
+                        </code>
+                    </pre>
                 </div>
 
-                <p>This sentence has no meaning.</p>
+                <p>
+                    Suppose now that we wanted to draw three shapes in an overlapping formation to demonstrate the functionality of the z-index property in a simple example.  Our code might look something like the following:
+                </p>
 
-                <p>This sentence also has no meaning!</p>
+                <div id="code">
+                    <pre>
+                        <code>
+&#60;style&#62;
+    .zdemo {
+        position: relative;
+    }
+    
+    .item1 {
+        position: relative;
+        z-index: 1;
+        border: 5px solid #FFF;
+        height: 200px;
+        margin: 40px;
+    }
+    
+    .item2 {
+        position: absolute;
+        z-index: 2;
+        background: #F00;
+        color:#000;
+        width: 35%;
+        height: 140px;
+        right: 30%;
+        top: 100px;
+    }
+    
+    .item3 {
+        position: absolute;
+        z-index: 3;
+        background: #00F;
+        width: 50%;
+        height: 40px;
+        left: 300px;
+        top: 130px;
+    }
+    &#60;/style&#62;
+    
+    &#60;h6&#62;"Stacking with z-index"&#60;/h6&#62;
+    
+    &#60;div class="zdemo"&#62;
+        &#60;div class="item1"&#62;Item 1 with "z-index: 1"&#60;/div&#62;
+        &#60;div class="item2"&#62;Item 2 with "z-index: 2"&#60;/div&#62;
+        &#60;div class="item3"&#62;Item 3 with "z-index: 3"&#60;/div&#62;
+&#60;/div&#62;
+                        </code>
+                    </pre>
+                </div>
+                    <p>
+                        Here we have three items placed inside a div, fully styled and positioned (note the X and Y axis properties such as “right,” “left,” “top,” and so on).  For the purposes of this example, the artistic properties of each item (shape, color, etc.) are unimportant.  Take note, however, that each of the three items has the “z-index” property followed by a value (in this case 1, 2 and 3).  As we have read, these values will determine as noted above the placement of each item in the Z axis hierarchy. This example code produces the following result:
+                    </p>
+                    <div id="code">
+                        <code>
+                            <style>
+                                .zdemo {
+                                  position: relative;
+                                }
+                                
+                                .item1 {
+                                  position: relative;
+                                  z-index: 1;
+                                  border: 5px solid #FFF;
+                                  height: 200px;
+                                  margin: 40px;
+                                }
+                                
+                                .item2 {
+                                  position: absolute;
+                                  z-index: 2;
+                                  background: #F00;
+                                  color:#000;
+                                  width: 35%;
+                                  height: 140px;
+                                  right: 30%;
+                                  top: 100px;
+                                }
+                                
+                                .item3 {
+                                  position: absolute;
+                                  z-index: 3;
+                                  background: #00F;
+                                  width: 50%;
+                                  height: 40px;
+                                  left: 300px;
+                                  top: 130px;
+                                }
+                            </style>
+                                
+                            <h6>"Stacking with z-index"</h6>
+                            
+                            <div class="zdemo">
+                                <div class="item1">Item 1 with "z-index: 1"</div>
+                                <div class="item2">Item 2 with "z-index: 2"</div>
+                                <div class="item3">Item 3 with "z-index: 3"</div>
+                            </div>
+                        </code>
+                    </div>
+
+                    <p>
+                        With the example code now rendered, we can now see how the z-index value of each item produces the resulting stack order.  Each item took the desired place in the layering process.  Of course, z-index is useful for far more than mere placement of shapes.  Z-index can be used for many creative 
+                        or practical purposes.  The navigation bar of this page, for example, is kept above all other elements using this method.  
+                    </p>
+
+                    <p>
+                        Now that you have had a brief introduction, try to apply what you might’ve learned here about the z-index property in one of your own projects.  Have fun!
+                    </p>
+            
             </div>
-
 
         </article>
 
