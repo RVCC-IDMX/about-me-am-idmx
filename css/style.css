@@ -118,9 +118,15 @@ footer a {
 }
 
 .extrabio {
+    transform:scale(1,0);
+    transform-origin:top;
     opacity:0;
-    display:none;
-    transition: all 500ms linear;
+    overflow:hidden;
+    height:0px;
+    transition-timing-function: ease-in-out;
+    transition-property: height, transform;
+    transition-duration: 10ms, 500ms;
+    transition-delay: 0ms, 10ms;
 }
 
 .extrabio p {
@@ -128,11 +134,15 @@ footer a {
 }
 
 .biobutton:checked ~ .extrabio {
+    transform:scale(1,1);
+    transition-duration:1s;
     opacity: 1;
-    display: contents;
-    
+    height:inherit;
+    transition-timing-function: ease-in-out;
+    transition-property: height, transform;
+    transition-duration: 10ms, 500ms;
+    transition-delay: 600ms, 50ms;
 }
-
 
 /*Hobbies list*/
 
