@@ -1,4 +1,8 @@
-/* --------------- Base config and "Mobile-compatible" design --------------- */
+
+/* --------------- Media query for "Non-Mobile" (DESKTOP) display size--------------- */
+/* ----------- See file "mobile.css" for mobile media query configuration ------------*/
+
+@media screen and (min-width: 50em) {
 
     /* --------------- Smooth scrolling --------------- */
 
@@ -27,8 +31,20 @@
         background-color:#2D3F66;
         color: #BAC7E6;
         display:flex;
-        flex-direction:column;
-        margin-bottom:1rem;
+        flex-direction:row;
+        justify-content:space-between;
+        position:fixed;
+        width:100%;
+    }
+
+    .navbar ul {
+        display:flex;
+        flex-direction:row;
+    }
+
+    .nav-toggle {
+        display:none;
+        /* HIDE hamburger menu for DESKTOP users */
     }
 
     /* --------------- Logo --------------- */
@@ -48,6 +64,10 @@
         font-size:2em;
         margin:0;
         margin-left:0.25em;
+    }
+    #logo-mobile {
+        display:none;
+        /*Disable mobile mode logo design for desktop users*/
     }
 
     /* --------------- Navigation List --------------- */
@@ -78,35 +98,4 @@
         filter:invert(1);
     }
 
-/* --------------- Media query for "Non-Mobile" display size--------------- */
-
-    @media screen and (min-width: 50em) {
-
-        .logo {
-            padding-top:0;
-            justify-content:none;
-            align-items:center;
-        }
-        .logo-img {
-            height:2em;
-            max-width:4em;
-            box-shadow:4px 4px #e6d8ba;
-        }
-        .logotitle {
-            font-size:2em;
-            margin:0;
-            margin-left:0.25em;
-        }
-
-        .navbar {
-            display:flex;
-            flex-direction:row;
-            justify-content:space-between;
-        }
-        
-        .navbar ul {
-            display:flex;
-            flex-direction:row;
-        }
-
-    }
+}

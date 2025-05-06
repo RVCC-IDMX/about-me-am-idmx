@@ -13,6 +13,7 @@
     <!--Styling files-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/mobile.css">
 
     <!--Favicon-->
     <link rel="icon" type="image/png" sizes="96x96" href="img/fav96x96.png">
@@ -22,10 +23,19 @@
     
     <header>
 
+        <div id="logo-mobile" class="logo">
+            <!--Site logo for MOBILE USERS-->
+            <img class="logo-img" src="img/site-logo.svg" alt="Site logo">
+            <!--Navbar site heading-->
+            <h1 class="logotitle-mobile">Web Dev I (IDMX)</h1>
+        </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
         <nav class="navbar">
 
-            <div class="logo">
-                <!--Site logo-->
+            <div id="logo-desktop" class="logo">
+                <!--Site logo for DESKTOP USERS-->
                 <img class="logo-img" src="img/site-logo.svg" alt="Site logo">
                 <!--Navbar site heading-->
                 <h1 class="logotitle">Web Dev I (IDMX)</h1>
@@ -41,12 +51,15 @@
             </div>
         </nav>
 
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span>
+            </span>
+        </label>
+
     </header>
 
     <main>
         
-
-
         <section id="hero">
             <!--hero section begins here-->
             <img src="img/avatar.svg" alt="My avatar picture">
