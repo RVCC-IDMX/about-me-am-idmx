@@ -1,107 +1,103 @@
-/* --------------- Smooth scrolling --------------- */
 
-html {
-    scroll-behavior: smooth;
-}
-
-/* --------------- Removing body padding --------------- */
-
-body {
-    box-sizing:border-box;
-    padding:0;
-    margin:0;
-}
-
-/* --------------- Page padding --------------- */
-
-main {
-    padding:2vw;
-    /*padding 2% of window width*/
-}
-
-/* --------------- Navbar --------------- */
-
-.navbar {
-    background-color:#2D3F66;
-    color: #BAC7E6;
-    display:flex;
-    flex-direction:column;
-    margin-bottom:1rem;
-}
-
-/* --------------- Logo --------------- */
-
-.logo {
-    display:flex;
-    justify-content:center;
-    padding-top:1.5vw;
-}
-
-.logo-img {
-    height:10vw;
-    width:10vw;
-    padding-right:1vw;
-    padding-left:1vw;
-}
-
-.logotitle {
-    font-size:2em;
-    margin:0;
-}
-
-/* --------------- Navigation List --------------- */
-
-.navbar-links li {
-    list-style:none;
-    text-align:center;
-    padding:0.25rem;
-}
-
-.navbar-links ul {
-    padding:0;
-}
-
-/* --------------- <a> tag styling in header+on hover --------------- */
-
-.navbar-links a {
-    color: #BAC7E6;
-    background-color:#2D3F66;
-    text-decoration:none;
-    display:inline-block;
-    border-radius:5px;
-    padding:0.25em 1.5em;
-}
-
-.navbar-links a:hover,
-.navbar-links a:focus {
-    filter:invert(1);
-}
-
-/* --------------- Media Query for Non-Mobile --------------- */
+/* --------------- Media query for "Non-Mobile" (DESKTOP) display size--------------- */
+/* ----------- See file "mobile.css" for mobile media query configuration ------------*/
 
 @media screen and (min-width: 50em) {
 
-    .logo {
-        padding-top:0;
-        justify-content:none;
-        align-items:center;
-    }
-    .logo-img {
-        height:4vw;
-        width:4vw;
-        padding-right:1vw;
-        padding-left:1vw;
+    /* --------------- Smooth scrolling --------------- */
+
+    html {
+        scroll-behavior: smooth;
     }
 
+    /* --------------- Removing body padding --------------- */
+
+    body {
+        box-sizing:border-box;
+        padding:0;
+        margin:0;
+    }
+
+    /* --------------- Page padding --------------- */
+
+    main {
+        padding:2vw;
+        /* overall padding 2% of window width*/
+    }
+
+    /* --------------- Navbar --------------- */
+
     .navbar {
+        background-color:#2D3F66;
+        color: #BAC7E6;
         display:flex;
         flex-direction:row;
         justify-content:space-between;
+        position:fixed;
+        width:100%;
+        z-index: 999;
     }
-    
+
     .navbar ul {
         display:flex;
         flex-direction:row;
+    }
+
+    .nav-toggle {
+        display:none;
+        /* HIDE hamburger menu for DESKTOP users */
+    }
+
+    /* --------------- Logo --------------- */
+
+    .logo {
+        display:flex;
+        justify-content:center;
+        padding-top:1.5vw;
+    }
+
+    .logo-img {
+        height:2.5vw;
+        min-height:3vw;
+        max-width:5vw;
+        box-shadow:0.25vw 0.25vw #e6d8ba;
+    }
+    .logotitle {
+        font-size:3vw;
+        margin:0;
+        margin-left:0.25em;
+    }
+    #logo-mobile {
+        display:none;
+        /*Disable mobile mode logo design for desktop users*/
+    }
+
+    /* --------------- Navigation List --------------- */
+
+    .navbar-links li {
+        list-style:none;
+        text-align:center;
+        padding:0.25rem;
+    }
+
+    .navbar-links ul {
+        padding:0;
+    }
+
+    /* --------------- <a> tag styling in header+on hover --------------- */
+
+    .navbar-links a {
+        color: #BAC7E6;
+        background-color:#2D3F66;
+        text-decoration:none;
+        display:inline-block;
+        border-radius:5px;
+        padding:0.25em 1.5em;
+    }
+
+    .navbar-links a:hover,
+    .navbar-links a:focus {
+        filter:invert(1);
     }
 
 }
