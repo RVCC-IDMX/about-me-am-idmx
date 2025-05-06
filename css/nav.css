@@ -22,7 +22,7 @@
 
     main {
         padding:2vw;
-        /*padding 2% of window width*/
+        /* overall padding 2% of window width*/
     }
 
     /* --------------- Navbar --------------- */
@@ -56,12 +56,13 @@
     }
 
     .logo-img {
-        height:2.5em;
-        max-width:4em;
-        box-shadow:0.25em 0.25em #e6d8ba;
+        height:2.5vw;
+        min-height:3vw;
+        max-width:5vw;
+        box-shadow:0.25vw 0.25vw #e6d8ba;
     }
     .logotitle {
-        font-size:2em;
+        font-size:3vw;
         margin:0;
         margin-left:0.25em;
     }

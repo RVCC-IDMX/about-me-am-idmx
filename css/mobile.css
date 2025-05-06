@@ -2,6 +2,11 @@
 
 @media screen and (max-width: 49.99em) {
 
+
+    h1, h2, h3, h4 {
+        font-family:"Prociono";
+        font-size: 30pt;
+    }
 /* --------------- Header configuration --------------- */
 
     header {
@@ -136,9 +141,18 @@
 
 /* --------------- Hero and Bio (MOBILE) --------------- */
 
+    main {
+        padding-top:7vw;
+    }
+
     #hero {
-        margin-top:15%;
         box-shadow:none;
+        margin-top:20px;
+    }
+
+    #hero img {
+        margin-top:10px;
+        width: 250px;
     }
 
     #data {
@@ -239,5 +253,20 @@
         margin-bottom:1em;
         box-shadow:none;
         /*Contact form styling adjustment for MOBILE*/
+    }
+}
+
+@media screen and (min-width:800px) {
+    #hero {
+        box-shadow:none;
+        margin-top:4vw;
+    }
+    main {
+        padding-top:5vw;
+    }
+}
+@media screen and (min-width:1100px) {
+    main {
+        padding-top:2vw;
     }
 }
